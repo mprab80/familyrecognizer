@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+            <h2 id="title">Face Recogntion App</h2>
+            <h3 id="note">This model is trained to identify the following people</h3>
+            <h3 id="mom">Mom</h3>
+            <h3 id="dad">Dad</h3>
+            <h3 id="sis">Sister</h3>
+            <h3 id="me">Me</h3>
+            <h4 id="webcamview">Webcam View-</h4>
+            <div id="camera"></div>
+            <h4 id="resultlabel">Result-</h4>
+            <div id="result"></div>
+            <br><br>
+            <button onclick="picture()" class="btn btn-info">Take Picture</button>
+            <br><br>
+            <button onclick="check()" class="btn btn-success">Identify Object</button>
+            <p style="font-size:22px;">Object: <span id="nameofobject"></span></p>
+            <br><br>
+            <p style="font-size:22px;">Accuracy: <span id="accuracy%"></span></p>
+        </center>
+    </body>
+</html>
